@@ -1,0 +1,120 @@
+
+
+.main {
+    display: block;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    padding: 2rem 3rem;
+    box-shadow: 0 2px 4px rgb(33 36 41 / 5%);
+    overflow: hidden;
+}
+
+.main__tooptip {
+    padding-left: 1rem;
+    padding-bottom: 4.5rem;
+}
+
+.main__header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+
+.tabs {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+.tabs__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+}
+
+.tabs__scroller {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.tabs__divider {
+    position: absolute;
+    width: 100vw;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, 0);
+    height: 1px;
+    background-color: var(--grey-2);
+}
+
+.tabs__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(-grey-4);
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.tabs__title::after {
+    content: '';
+    display: block;
+    border-bottom: solid 3px var( --black);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.tabs__content {
+    display: none;
+}
+
+
+#html:checked~.tabs__scroller .tabs__title[for="html"]::after,
+#css:checked~.tabs__scroller .tabs__title[for="css"]::after {
+    transform: scaleX(1);
+
+}
+
+#html:checked~ .tabs__content_html {
+    display: block;
+}
+
+#css:checked~ .tabs__content_css {
+    display: block;
+}
+
+
+@media screen and (min-width: 768px) {
+    .tabs__content {
+        padding: 3rem 0;
+    }
+
+}
+
+.tabs__content_figure {
+    margin: 0;
+}
+
+.tabs__content_pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+    overflow-x: auto;
+}
+
+.tabs__content_pre-css {
+    overflow-y: auto;
+}
+
+

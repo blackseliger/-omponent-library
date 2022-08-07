@@ -1,0 +1,98 @@
+
+.aside {
+    display: none;
+}
+
+.aside__burger-menu[data-open] {
+    transform: translateX(0);
+    height: 100vh;
+    width: 100vh; 
+    position: absolute;
+    z-index: 9999;
+}
+
+.page__header .aside__burger-menu[data-open] ~ .page__main {
+    display: none;
+}
+
+.aside__menu {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.aside__title {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    color: var(--black);
+    margin: 0;
+}
+
+.aside__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--black);
+    list-style-type: none;
+    
+}
+
+.aside__href {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.aside__nav {
+    display: grid;
+    /* grid-template-rows: repeat(auto-fill, auto);
+    gap: 0.25rem; */
+}
+
+.aside__nav-ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.aside__link_theme_false {
+    color: var(--black);
+}
+
+.aside__link_active-true {
+    color: #D84910;
+
+}
+
+
+@media screen and (min-width: 376px) {
+    .aside {
+        all: revert;
+        /* https://stackoverflow.com/questions/15901030/reset-remove-css-styles-for-element-only */
+        /* display: block; */
+    }
+
+    .aside__template {
+        display: block;
+    }
+
+    .aside__nav-ul {
+        gap: 0.25rem;  
+    }
+
+
+    .aside__link {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+    }
+
+}
+
+
+ 

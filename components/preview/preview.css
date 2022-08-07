@@ -1,0 +1,82 @@
+.preview {
+    flex-grow: 1;
+    padding-top: 4.3125rem;   
+}
+
+.preview__aside {
+    display: none;
+}
+
+.preview__cards {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    gap: 1rem;
+}
+
+.preview__card {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    box-sizing: border-box;
+    border: none;
+    background: var(--white);
+    padding-bottom: 0.625rem;
+    height: 10.25rem;
+    /* заполнить пустосту */
+    flex-basis: calc(10.25rem - 1rem);
+    flex-grow: 1;
+
+    box-shadow: 0px 0.125rem 0.25rem rgba(33, 36, 41, 0.05);
+    border-radius: 0.5rem;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--black);
+
+}
+
+.preview__image {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    /* когда элемент заполнится тогда появится нижняя разделяющая линия  */
+    border-bottom: 1px solid var(--grey-2);
+}
+
+.preview__title {
+    flex-grow: 0;
+}
+
+
+
+@media screen and (min-width: 376px) {
+    .preview {
+        padding-bottom: 204px;
+    }
+
+    
+    .preview__cards {
+        gap: 1.875rem;
+    }
+    
+    .preview__card {
+       
+        padding-bottom: 1.875rem;
+        height: 22.9375rem;
+        /* заполнить пустосту */
+        flex-basis: calc(21.875rem - 1.875rem);
+        flex-grow: 1;
+        border-radius: 0.75rem;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.3125rem;
+        line-height: 1.5625rem;
+    }
+}
+

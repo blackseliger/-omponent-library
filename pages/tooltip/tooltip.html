@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page component</title>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script defer src="/09-lection7/01-burger-menu/burger-menu.js"></script>
+</head>
+
+<body class="preload">
+    <div class="page page_inner">
+        <div class="page__header">
+            <div class="container">
+                <div class="header__button">
+                    <button id="burger-menu-open"
+                        class="burger-menu__button_open burger-menu__button header__menu-button">
+                        <svg class="burger-menu__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button id="burger-menu-close"
+                        class="burger-menu__button burger-menu__button_close burger-menu__button_hidden header__menu-button">
+                        <svg class="burger-menu__icon burger-menu__icon_close" width="24" height="24"
+                            viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="#212429" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6 6L18 18" stroke="#212429" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="header__icons">
+                    <svg class="header__icon">
+                        <use href="/assets/sprite.svg#square"></use>
+                    </svg>
+                    <svg class="header__icon">
+                        <use href="/assets/sprite.svg#circle"></use>
+                    </svg>
+                    <svg class="header__icon" width="32" height="32" viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0L32 32H0V0Z" fill="currentColor" />
+                    </svg>
+                </div>
+                <div class="aside__burger-menu header__aside" id="burger-menu">
+                    <div class="aside__menu">
+                        <h4 class="aside__title">Components</h4>
+                        <nav class="aside__nav">
+                            <ul class="aside__nav-ul">
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href"
+                                        href="#">Modal</a>
+                                </li>
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href"
+                                        href="#">Tooltip</a></li>
+                                <li class="aside__link aside__link_theme_false aside__link_active-true"><a
+                                        class="aside__href aside__link_active-true" href="">Avatar</a></li>
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href"
+                                        href="#">Calendar</a></li>
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href"
+                                        href="#">Histogram</a></li>
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href" href="#">Custom
+                                        form elements</a>
+                                </li>
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href" href="#">Main
+                                        page</a></li>
+                            </ul>
+                            <nav />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page__main">
+            <div class="container  page__container">
+                <div class="aside aside__template">
+                    <div class="aside__menu">
+                        <h4 class="aside__title">Components</h4>
+                        <nav class="aside__nav">
+                            <ul class="aside__nav-ul">
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href"
+                                        href="#">Modal</a>
+                                </li>
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href"
+                                        href="#">Tooltip</a></li>
+                                <li class="aside__link aside__link_theme_false aside__link_active-true"><a
+                                        class="aside__href aside__link_active-true" href="">Avatar</a></li>
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href"
+                                        href="#">Calendar</a></li>
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href"
+                                        href="#">Histogram</a></li>
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href" href="#">Custom
+                                        form elements</a>
+                                </li>
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href" href="#">Main
+                                        page</a></li>
+                            </ul>
+                            <nav />
+                    </div>
+                </div>
+                <main class="main">
+                    <header class="main__header">Tooltip</header>
+                    <section class="main__section">
+                        <div class="main__tooptip">
+                            <div class="tooltip">
+                                <div class="tooltip__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z"
+                                            fill="#212429" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.2581 8.02432C11.7926 7.94447 11.3138 8.03195 10.9066 8.27126C10.4994 8.51058 10.1901 8.88629 10.0333 9.33184C9.85006 9.85283 9.27914 10.1266 8.75815 9.94333C8.23716 9.76006 7.96339 9.18915 8.14666 8.66816C8.46013 7.77705 9.07886 7.02563 9.89327 6.547C10.7077 6.06837 11.6652 5.89341 12.5962 6.05311C13.5273 6.2128 14.3717 6.69686 14.9801 7.41953C15.5883 8.14205 15.9213 9.05648 15.92 10.0009C15.9195 11.5313 14.7849 12.5419 13.9747 13.082C13.5391 13.3725 13.1105 13.586 12.7949 13.7263C12.6356 13.7971 12.5015 13.8508 12.4049 13.8876C12.3565 13.906 12.3173 13.9203 12.2887 13.9305L12.254 13.9427L12.2429 13.9464L12.239 13.9478L12.2375 13.9483C12.2372 13.9484 12.2362 13.9487 11.92 13L12.2362 13.9487C11.7123 14.1233 11.146 13.8402 10.9713 13.3162C10.7968 12.7926 11.0794 12.2267 11.6027 12.0517L11.6014 12.0521C11.6015 12.0521 11.6016 12.052 11.6027 12.0517L11.6187 12.0461C11.6341 12.0406 11.6593 12.0314 11.6929 12.0186C11.7603 11.9929 11.8606 11.9529 11.9826 11.8987C12.2294 11.789 12.5509 11.6275 12.8653 11.4179C13.5549 10.9582 13.92 10.4691 13.92 10L13.92 9.99851C13.9207 9.52619 13.7542 9.06886 13.45 8.70753C13.1459 8.34619 12.7236 8.10417 12.2581 8.02432Z"
+                                            fill="#212429" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 15C12.5523 15 13 15.4477 13 16V16.5C13 17.0523 12.5523 17.5 12 17.5C11.4477 17.5 11 17.0523 11 16.5V16C11 15.4477 11.4477 15 12 15Z"
+                                            fill="#212429" />
+                                    </svg>
+                                </div>
+                                <div class="tooltip__text">Helper Text</div>
+                            </div>
+                        </div>
+                        <div class="main__precode">
+                            <div class="tabs">
+                                <input type="radio" class="tabs__input" name="tabs__input" id="html" checked>
+                                <input type="radio" class="tabs__input" name="tabs__input" id="css">
+
+                                <div class="tabs__scroller">
+                                    <label class="tabs__title" for="html">html</label>
+                                    <label class="tabs__title" for="css">css</label>
+                                </div>
+                                <div class="tabs__divider">
+                                </div>
+
+                                <div class="tabs__content tabs__content_html">
+                                    <figure class="tabs__content_figure">
+                                        <pre class="tabs__content_pre"><code class="language-html">
+&lt;div class=&quot;tooltip&quot;&gt;
+    &lt;div class=&quot;tooltip__icon&quot;&gt;
+        &lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+            &lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z&quot; fill=&quot;#212429&quot;/&gt;
+            &lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M12.2581 8.02432C11.7926 7.94447 11.3138 8.03195 10.9066 8.27126C10.4994 8.51058 10.1901 8.88629 10.0333 9.33184C9.85006 9.85283 9.27914 10.1266 8.75815 9.94333C8.23716 9.76006 7.96339 9.18915 8.14666 8.66816C8.46013 7.77705 9.07886 7.02563 9.89327 6.547C10.7077 6.06837 11.6652 5.89341 12.5962 6.05311C13.5273 6.2128 14.3717 6.69686 14.9801 7.41953C15.5883 8.14205 15.9213 9.05648 15.92 10.0009C15.9195 11.5313 14.7849 12.5419 13.9747 13.082C13.5391 13.3725 13.1105 13.586 12.7949 13.7263C12.6356 13.7971 12.5015 13.8508 12.4049 13.8876C12.3565 13.906 12.3173 13.9203 12.2887 13.9305L12.254 13.9427L12.2429 13.9464L12.239 13.9478L12.2375 13.9483C12.2372 13.9484 12.2362 13.9487 11.92 13L12.2362 13.9487C11.7123 14.1233 11.146 13.8402 10.9713 13.3162C10.7968 12.7926 11.0794 12.2267 11.6027 12.0517L11.6014 12.0521C11.6015 12.0521 11.6016 12.052 11.6027 12.0517L11.6187 12.0461C11.6341 12.0406 11.6593 12.0314 11.6929 12.0186C11.7603 11.9929 11.8606 11.9529 11.9826 11.8987C12.2294 11.789 12.5509 11.6275 12.8653 11.4179C13.5549 10.9582 13.92 10.4691 13.92 10L13.92 9.99851C13.9207 9.52619 13.7542 9.06886 13.45 8.70753C13.1459 8.34619 12.7236 8.10417 12.2581 8.02432Z&quot; fill=&quot;#212429&quot;/&gt;
+            &lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M12 15C12.5523 15 13 15.4477 13 16V16.5C13 17.0523 12.5523 17.5 12 17.5C11.4477 17.5 11 17.0523 11 16.5V16C11 15.4477 11.4477 15 12 15Z&quot; fill=&quot;#212429&quot;/&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tooltip__text&quot;&gt;Helper Text&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                    </figure>
+                                </div>
+                                <div class="tabs__content tabs__content_css">
+                                    <figure class="tabs__content_figure">
+                                        <pre class="tabs__content_pre tabs__content_pre-css"><code class="language-css">
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+                                            
+.tooltip:hover&gt;.tooltip__text {
+    display: block;
+}
+                                            
+.tooltip__icon {
+    cursor: pointer;
+    display: inline-block;
+}
+                                            
+                                            
+.tooltip__text::after {
+    content: '';
+    border: 16px solid transparent;
+    border-bottom: 6px solid #4263EB;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+                                            
+}
+                                            
+.tooltip__text {
+    background: #4263EB;
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 10px;
+    padding: 13px 21px;
+                                            
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+                                            
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #DDE2E5;
+    white-space: nowrap;
+                                            
+                                            
+    display: none;
+}
+                                        </code></pre>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+        <div class="footer page__footer">
+            <p class="footer__title page__footer-title">Reusable component library</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
