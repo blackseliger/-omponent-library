@@ -28,16 +28,6 @@
                                 stroke-linejoin="round" />
                         </svg>
                     </button>
-                    <button id="burger-menu-close"
-                        class="burger-menu__button burger-menu__button_close burger-menu__button_hidden header__menu-button">
-                        <svg class="burger-menu__icon burger-menu__icon_close" width="24" height="24"
-                            viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 6L6 18" stroke="#212429" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M6 6L18 18" stroke="#212429" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </button>
                 </div>
                 <div class="header__icons">
                     <svg class="header__icon">
@@ -51,31 +41,64 @@
                         <path d="M0 0L32 32H0V0Z" fill="currentColor" />
                     </svg>
                 </div>
-                <div class="aside__burger-menu header__aside" id="burger-menu">
-                    <div class="aside__menu">
-                        <h4 class="aside__title">Components</h4>
-                        <nav class="aside__nav">
-                            <ul class="aside__nav-ul">
-                                <li class="aside__link aside__link_theme_false"><a class="aside__href"
-                                        href="#">Modal</a>
-                                </li>
-                                <li class="aside__link aside__link_theme_false"><a class="aside__href"
-                                        href="#">Tooltip</a></li>
-                                <li class="aside__link aside__link_theme_false aside__link_active-true"><a
-                                        class="aside__href aside__link_active-true" href="">Avatar</a></li>
-                                <li class="aside__link aside__link_theme_false"><a class="aside__href"
-                                        href="#">Calendar</a></li>
-                                <li class="aside__link aside__link_theme_false"><a class="aside__href"
-                                        href="#">Histogram</a></li>
-                                <li class="aside__link aside__link_theme_false"><a class="aside__href" href="#">Custom
-                                        form elements</a>
-                                </li>
-                                <li class="aside__link aside__link_theme_false"><a class="aside__href" href="#">Main
-                                        page</a></li>
-                            </ul>
-                            <nav />
+                <!-- Mobile modal window start -->
+                <div id="burger-menu" class="modal modal_menu">
+                    <div class="modal__window">
+                        <div class="modal__header">
+                            <div class="modal__container">
+                                <div class="header__inner">
+                                    <a href="#" title="Close" id="burger-menu-close"
+                                    class="modal__close">
+                                        <svg class="svg-icon" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 6L6 18" stroke="#212429" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6 6L18 18" stroke="#212429" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                      </a>
+                                    <div class="header__logo">
+                                        <svg fill="none" height="32" viewBox="0 0 110 32" width="110"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g>
+                                                <path d="m0 1h30v30h-30z"></path>
+                                                <rect height="32" rx="16" width="32" x="38"></rect>
+                                                <path d="m78 0 32 32h-32z"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__divider"></div>
+                        <div class="modal__body container">
+                            <div class="aside__menu">
+                                <h4 class="aside__title">Components</h4>
+                                <nav class="aside__nav">
+                                    <ul class="aside__nav-ul">
+                                        <li class="aside__link aside__link_theme_false"><a class="aside__href"
+                                                href="#">Modal</a>
+                                        </li>
+                                        <li class="aside__link aside__link_theme_false"><a class="aside__href"
+                                                href="#">Tooltip</a></li>
+                                        <li class="aside__link aside__link_theme_false aside__link_active-true"><a
+                                                class="aside__href aside__link_active-true" href="">Avatar</a></li>
+                                        <li class="aside__link aside__link_theme_false"><a class="aside__href"
+                                                href="#">Calendar</a></li>
+                                        <li class="aside__link aside__link_theme_false"><a class="aside__href"
+                                                href="#">Histogram</a></li>
+                                        <li class="aside__link aside__link_theme_false"><a class="aside__href" href="#">Custom
+                                                form elements</a>
+                                        </li>
+                                        <li class="aside__link aside__link_theme_false"><a class="aside__href" href="#">Main
+                                                page</a></li>
+                                    </ul>
+                                    <nav />
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- Mobile modal window end -->
             </div>
         </div>
         <div class="page__main">
@@ -222,4 +245,3 @@
 </body>
 
 </html>
-

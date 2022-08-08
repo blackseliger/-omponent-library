@@ -3,17 +3,114 @@
     display: none;
 }
 
-.aside__burger-menu[data-open] {
-    transform: translateX(0);
-    height: 100vh;
-    width: 100vh; 
-    position: absolute;
-    z-index: 9999;
+
+
+.modal {
+    position: fixed;
+    background-color: rgba(196, 196, 196, 0.8);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
 }
 
-.page__header .aside__burger-menu[data-open] ~ .page__main {
-    display: none;
+.modal[data-open] {
+    visibility:visible;
+    opacity: 1;
 }
+
+
+.modal.modal_menu .modal__window {
+    border-radius: 0;
+    top: 0;
+    left: 0;
+    transform: none;
+    height: 100vh;
+    padding: 0;
+}
+
+.modal__window {
+    max-width: 428px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem 2.5rem;
+    background: var(--white);
+    border-radius: 0.5rem;
+}
+
+.modal__container {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.modal__header {
+    padding: 25px 0;
+}
+
+.modal.modal_menu .modal__close {
+    padding: 3px;
+    border-radius: 50%;
+    background-color: var(--grey-2);
+    display: inline-flex;
+    left: 0;
+    right: auto;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.modal__close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    text-decoration: none;
+}
+
+.modal__close .svg-icon {
+    font-size: 24px;
+    stroke: var(--grey-4);
+}
+
+
+.svg-icon {
+    display: inline-block;
+    color: var(--text-primary);
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.header__logo {
+    display: inline-flex;
+}
+
+.header__logo svg {
+    stroke: var(--grey-4);
+    fill: var(--dark-bg);
+}
+
+.modal__divider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--grey-2);
+    margin-bottom: 1.5rem;
+}
+
 
 .aside__menu {
     display: grid;
